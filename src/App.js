@@ -50,6 +50,7 @@ class App extends React.Component{
 <img src={this.state.image} style={{width:'350px',height:'350px'}} alt='Some error Occured..'/>
 </div>
 <div style={{overflow:'auto',height:'350px',padding:'15px'}}>
+<h4><b>Disease</b> <p style={{color:'red'}}>Melanoma</p></h4>
 <h3 style={{fontFamily:'Georgia'}}><b>Causes</b></h3>
 
 <p style={{fontFamily:'Castoro',fontSize:'24'}}>Melanoma occurs when something goes wrong in the melanin-producing cells (melanocytes) that give color to your skin.
