@@ -22,7 +22,7 @@ class App extends React.Component{
       <div className='bg'>
            <nav >
  <div style={{borderBottom:'1px solid #33333'}}>
-            <h1 style={{fontFamily:'Georgia',fontSize:'34px',marginLeft:'55px',marginTop:'10px',float:'left'}}><b>Skinned</b></h1>
+            <h1 style={{fontFamily:'Pacifico',fontSize:'54px',marginLeft:'35px',marginTop:'10px',float:'left'}}>Skinned</h1>
            <button type="button" className="btn btn-link" style={{color:'black',float:'right',marginTop:'10px'}}>Our Concept</button>
            <button type="button" className="btn btn-link" style={{color:'black',float:'right',marginTop:'10px'}}>Our Team</button>
       </div>
@@ -36,7 +36,8 @@ class App extends React.Component{
    <p style={{color:'grey',marginTop:'15px'}}>Analysing The Image....</p></div>:
   this.state.image===''?
      <div className='home' style={{marginTop:'250px'}}>
-     <h4 style={{fontFamily:'Georgia',marginBottom:'30px',color:'grey'}}>Get All Details About Your Skin Disesase By Just Uploading A Photo.</h4>
+     <h4 style={{fontFamily:'Texturina',marginBottom:'30px',color:'grey'}}>Get All Details About Your Skin Disesase By<br/>  Just Uploading A Photo.</h4>
+
               <input type='file' hidden ref={this.inputRef} onChange={this.fileInput}/>
 
               <button type="button" onClick={this.fileUpload} className="btn btn-primary btn-lg" style={{borderRadius:'24px'}}>
@@ -45,11 +46,11 @@ class App extends React.Component{
                </font>
             </button>
    </div>:
-<div className='details card shadow' style={{marginTop:'170px',display:'flex',flexDirection:'row',backgroundColor: 'rgba(255, 255, 255, 0.5)'}}>
+<div className='flex-container shadow'>
 <div>
-<img src={this.state.image} style={{width:'350px',height:'350px'}} alt='Some error Occured..'/>
+<img className='image' src={this.state.image}  alt='Image Type Not Supported..'/>
 </div>
-<div style={{overflow:'auto',height:'350px',padding:'15px'}}>
+<div className='description'>
 <h4><b>Disease</b> <p style={{color:'red'}}>Melanoma</p></h4>
 <h3 style={{fontFamily:'Georgia'}}><b>Causes</b></h3>
 
