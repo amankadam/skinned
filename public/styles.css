@@ -1,0 +1,13 @@
+body{
+  margin: 0px;
+}
+.bg{
+  background-image:url('./bg.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 0px;
+  width: 100%;
+  position:fixed;
+  overflow: auto;
+}
