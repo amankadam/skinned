@@ -48,7 +48,7 @@ class App extends React.Component{
    </div>:
 <div className='flex-container shadow'>
 <div>
-<img className='image' src={this.state.image}  alt='Image Type Not Supported..'/>
+<img className='image' src={this.state.image}  alt='Not Supported..'/>
 </div>
 <div className='description'>
 <h4><b>Disease</b> <p style={{color:'red'}}>Melanoma</p></h4>
